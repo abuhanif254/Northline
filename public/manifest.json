@@ -1,0 +1,20 @@
+{
+  "name": "Northline - Find work worth doing",
+  "short_name": "Northline",
+  "description": "A curated career marketplace listing quality roles from companies that take craft, pay, and management seriously.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#1c4a42",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["business", "productivity"],
+  "screenshots": []
+}

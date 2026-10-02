@@ -1,0 +1,84 @@
+@import "tailwindcss";
+
+@theme {
+  --color-bg: #f3efe6;
+  --color-surface: #faf8f4;
+  --color-surface-hover: #ece7db;
+  --color-fg: #171614;
+  --color-muted: #6d675e;
+  --color-subtle: #8a8478;
+  --color-primary: #1c4a42;
+  --color-primary-fg: #f3efe6;
+  --color-primary-hover: #163b35;
+  --color-border: #d9d3c5;
+  --color-ring: #1c4a42;
+  --color-danger: #8f2d21;
+  --color-success: #2f5d46;
+
+  --font-sans: "Figtree", "Segoe UI", system-ui, sans-serif;
+  --font-display: "Newsreader", "Iowan Old Style", "Palatino Linotype", Georgia, serif;
+
+  --radius-sm: 0.5rem;
+  --radius-md: 0.75rem;
+  --radius-lg: 1rem;
+  --radius-xl: 1.5rem;
+  --radius-2xl: 1.75rem;
+
+  --shadow-border:
+    0px 0px 0px 1px rgba(23, 22, 20, 0.06),
+    0px 1px 2px -1px rgba(23, 22, 20, 0.06),
+    0px 2px 4px 0px rgba(23, 22, 20, 0.04);
+  --shadow-border-hover:
+    0px 0px 0px 1px rgba(23, 22, 20, 0.1),
+    0px 1px 2px -1px rgba(23, 22, 20, 0.08),
+    0px 8px 20px -12px rgba(23, 22, 20, 0.18);
+}
+
+@layer base {
+  html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: var(--color-bg);
+    color: var(--color-fg);
+    font-family: var(--font-sans);
+    line-height: 1.5;
+  }
+
+  h1,
+  h2,
+  h3 {
+    text-wrap: balance;
+  }
+
+  p {
+    text-wrap: pretty;
+  }
+
+  button:not(:disabled),
+  [role="button"]:not(:disabled) {
+    cursor: pointer;
+  }
+
+  ::selection {
+    background-color: color-mix(in oklab, var(--color-primary) 18%, transparent);
+    color: var(--color-fg);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

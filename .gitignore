@@ -1,0 +1,102 @@
+# Dependencies
+node_modules/
+.npm/
+.pnpm-store/
+.yarn/
+package-lock.json.bak
+yarn.lock.bak
+
+# Build outputs
+dist/
+.output/
+.vercel/
+.nitro/
+.tanstack/
+build/
+out/
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+.env.production.local
+
+# Database
+*.db
+*.db-shm
+*.db-wal
+pglite-data/
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Runtime data
+pids/
+*.pid
+*.seed
+*.pid.lock
+
+# OS files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# IDE / Editor
+.vscode/
+!.vscode/extensions.json
+!.vscode/settings.json
+.idea/
+*.swp
+*.swo
+*~
+.project
+.classpath
+.settings/
+*.sublime-workspace
+*.sublime-project
+
+# Testing
+coverage/
+.nyc_output/
+*.lcov
+.jest/
+
+# Misc
+.temp/
+.cache/
+.parcel-cache/
+artifacts/
+screenshots/
+*.tsbuildinfo
+.eslintcache
+
+# Temporary files
+tmp/
+temp/
+
+# Grok-specific (legacy - should be removed)
+.grok/
+startup.sh
+AGENTS.md
+public/__grok/
+server/middleware/grok-pwa.ts
+server/virtual-grok-og-identity.d.ts
+
+# Optional: Uncomment if using TypeScript strict mode
+# *.tsbuildinfo
+
+# Optional: Keep package-lock.json committed for reproducible builds
+# If using npm, you should commit package-lock.json
+# If using yarn, commit yarn.lock instead
+# If using pnpm, commit pnpm-lock.yaml
